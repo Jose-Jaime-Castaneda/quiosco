@@ -1,5 +1,6 @@
 import OrderSideBar from "@/components/order/OrderSideBar";
 import OrderSumary from "@/components/order/OrderSummary";
+import ToastNotification from "@/components/ui/ToastNotifications";
 
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
     return (
@@ -13,6 +14,8 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
 
                 <OrderSumary />
             </div>
+
+            <ToastNotification />
         </>
     )
 }
