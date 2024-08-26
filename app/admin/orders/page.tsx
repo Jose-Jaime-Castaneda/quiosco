@@ -1,7 +1,9 @@
-export default function page () {
+import Heading from "@/components/ui/Heading";
+
+export default function page() {
   return (
-    <div>
-      page
-    </div>
+    <>
+      <Heading>Administrar Ordenes</Heading>
+    </>
   );
 };
