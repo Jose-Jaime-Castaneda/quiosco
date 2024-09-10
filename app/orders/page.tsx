@@ -52,7 +52,9 @@ export default async function page() {
 
             <Logo />
 
-            <form action={handleSubmit}>
+            <form
+                className="w-2/3 mx-auto"
+                action={handleSubmit}>
                 <input
                     type="submit"
                     className="bg-amber-400 w-full lg:w-auto text-xl px-3 py-3 text-center font-bold cursor-pointer"
