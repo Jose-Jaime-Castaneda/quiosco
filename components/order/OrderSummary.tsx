@@ -40,8 +40,8 @@ export default function OrderSumary() {
     }
 
     return (
-        <aside className="h-screen overflow-y-scroll w-64 p-5">
-            <h1 className="text-4xl text-center font-black">Mi pedido</h1>
+        <aside className="h-screen overflow-y-scroll w-1/3 p-5">
+            <h1 className="text-xl sm:text-4xl text-center font-black">Mi pedido</h1>
 
             {order.length === 0 ? <p className="text-center my-10">El pedido está vacío</p> :
                 (
@@ -53,7 +53,7 @@ export default function OrderSumary() {
                             />
                         ))}
 
-                        <p className="text-2xl mt-20 text-center">
+                        <p className="text-xl sm:text-2xl mt-20 text-center">
                             Total a pagar: {''}
                             <span className="font-bold ">{formatCurrency(total)}</span>
                         </p>
